@@ -82,8 +82,7 @@ fieldset {
 }
 
 .header-logo {
-    padding: 24px 0;
-    margin-right: 76px;
+    padding: 17.5px 0;
 }
 
 .nav-list {
@@ -168,9 +167,7 @@ fieldset {
     align-items: center;
 }
 
-.mobil-menu-icon {
 
-}
 
 /* main css */
 .solution-sec {
@@ -785,11 +782,16 @@ fieldset {
 
 /* Adaptive desighn */
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1157px) {
     .container {
         max-width: 768px;
         padding: 0 16px;
         margin: 0 auto;
+    }
+
+    .header-logo {
+        padding: 24px 0;
+        margin-right: 76px;
     }
 
     .nav-list {
@@ -837,6 +839,11 @@ fieldset {
         margin: 0 auto;
     }
   
+    .header-logo {
+        padding: 17.5px 0;       
+        margin-right: 76px;
+    }
+
     .nav-list {
         display: flex;
         gap: 40px;
@@ -851,6 +858,7 @@ fieldset {
     }
 
     .contact-list {
+        display: flex;
         flex-direction: row;
         gap: 40px;
     }
