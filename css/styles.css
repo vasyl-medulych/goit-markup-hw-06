@@ -82,7 +82,7 @@ fieldset {
 }
 
 .header-logo {
-    padding: 17.5px 0;
+    padding: 16px 0;
 }
 
 .nav-list {
@@ -817,18 +817,9 @@ fieldset {
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
+        padding: 0;
     }
-
-    .contact-email {
-        padding-top: 16px;
-        padding-bottom: 0;
-    }
-
-    .contact-tel {
-        padding-top: 0;
-        padding-bottom: 16px;
-    }
-    
+      
 }
 
 @media (min-width: 1158px) {
@@ -840,7 +831,7 @@ fieldset {
     }
   
     .header-logo {
-        padding: 17.5px 0;       
+        padding: 17px 0;       
         margin-right: 76px;
     }
 
