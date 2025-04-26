@@ -91,13 +91,9 @@ fieldset {
 
 .nav-link {
     position: relative;
-    display: flex;
-    flex-direction: column;
     padding-top: 24px;
     padding-bottom: 24px;
-    align-self: flex-end;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* margin-bottom: 20px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -179,23 +175,21 @@ fieldset {
     background-position: 50% 50%;
     background-size: cover;
    
-    padding-top: 188px;
-    padding-bottom: 188px;
-    /* max-width: 1440px; */
+    padding: 72px 52px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .solution {
-    max-width: 496px;
+    max-width: 216px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white-background);
     margin: 0 auto;
-    margin-bottom: 46px;
+    margin-bottom: 72px;
     
 }
 
@@ -819,6 +813,18 @@ fieldset {
         letter-spacing: 0.04em;
         padding: 0;
     }
+
+    .solution-sec {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+    .solution {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+    }
+
       
 }
 
@@ -856,5 +862,17 @@ fieldset {
 
     .contact-link {
         padding: 24px 0; 
+    }
+
+    .solution-sec {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .solution {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 48px;
     }
 }
