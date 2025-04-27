@@ -289,14 +289,17 @@ fieldset {
   border-radius: 0 0 4px 4px;
 }
 
+/* Sec3 */
+
 .section-studio {
-  padding: 120px 0 120px;
+  padding: 120px 0;
   background-color: var(--light);
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
   align-items: center;
   justify-content: center;
 }
@@ -312,7 +315,6 @@ fieldset {
   text-transform: capitalize;
   margin: 0 auto 72px;
   border-radius: 0 0 4px 4px;
-  width: calc((100% - 72px) / 4);
 }
 
 .card-content {
@@ -851,6 +853,17 @@ fieldset {
   .goals-title {
     text-align: start;
   }
+
+  /* Sec3 */
+  .section-studio {
+    padding: 96px 0;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -924,5 +937,15 @@ fieldset {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  /* Sec3 */
+  .section-studio {
+    padding: 96px 0;
+  }
+
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
   }
 }
