@@ -366,8 +366,10 @@ fieldset {
   text-align: center;
   margin-bottom: 8px;
 }
+
+/* Sec4 */
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .title {
@@ -382,8 +384,9 @@ fieldset {
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 48px 24px;
+  align-items: center;
 }
 .porfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -864,6 +867,17 @@ fieldset {
     flex-wrap: wrap;
     gap: 64px 24px;
   }
+
+  /* Sec4 */
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+
+  .porfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media (min-width: 1158px) {
@@ -947,5 +961,15 @@ fieldset {
   .team-list {
     flex-direction: row;
     gap: 24px;
+  }
+
+  /* Sec4 */
+  .portfolio {
+    padding: 120px 0;
+  }
+
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
