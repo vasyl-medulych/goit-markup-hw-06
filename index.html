@@ -58,13 +58,87 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="mobil-menu-button">
+        <button type="button" class="mobil-menu-button" data-menu-open>
           <svg class="mobil-menu-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-mobil-menu"></use>
           </svg>
         </button>
       </div>
       <!-- #endregion Contact-header -->
+      <!-- #region Burger menu -->
+      <div class="burger-menu-overlay" data-menu>
+        <div class="container burger-menu">
+          <button type="button" class="burger-close" data-menu-close>
+            <svg class="burger-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav-burger">
+            <ul class="nav-list-burger">
+              <li class="nav-burger-item">
+                <a
+                  class="nav-burger-link current-nav-burger-link"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-burger-item">
+                <a class="nav-burger-link" href="">Portfolio</a>
+              </li>
+              <li class="nav-burger-item">
+                <a class="nav-burger-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contact-burger">
+            <ul class="contact-burger-list">
+              <li>
+                <a class="contact-burger-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="contact-burger-link current-contact-burger-link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="burger-social-list">
+            <li class="burger-social-item">
+              <a href="" class="burger-social-link"
+                ><svg class="burger-social-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-item">
+              <a href="" class="burger-social-link"
+                ><svg class="burger-social-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-item">
+              <a href="" class="burger-social-link"
+                ><svg class="burger-social-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-item">
+              <a href="" class="burger-social-link"
+                ><svg class="burger-social-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- #endregion Burger menu -->
     </header>
     <main>
       <!-- #region H1 -->
@@ -509,6 +583,7 @@
         </div>
       </div>
     </footer>
+
     <!-- #region Modal Form -->
     <div class="modal-overlay" data-modal>
       <div class="modal">
@@ -576,10 +651,12 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-link" target="_blank"
-                >Privacy Policy</a
-              ></label
+              <div>
+                I accept the terms and conditions of the
+                <a href="" class="privacy-link" target="_blank"
+                  >Privacy Policy</a
+                >
+              </div></label
             >
           </div>
           <button type="submit" class="footer-button-subscribe submit">
@@ -591,5 +668,6 @@
     <!-- #endregion Modal Form -->
     <!-- Ставимо перед закриваючим тегом body -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
