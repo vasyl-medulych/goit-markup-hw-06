@@ -1040,19 +1040,11 @@ fieldset {
     width: 264px;
   }
 
-  /* .footer-item {
-    margin-right: 80px;
-  } */
-
   .footer-form {
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
   }
-
-  /* .footer-text {
-    max-width: 264px;
-  } */
 
   .footer-logo-full {
     display: inline-block;
