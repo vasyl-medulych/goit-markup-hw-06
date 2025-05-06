@@ -298,12 +298,12 @@ fieldset {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 
-  padding: 72px 52px;
+  padding: 72px 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -315,7 +315,7 @@ fieldset {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-x2.jpg);
+      url(../images/people-office-mob-x2.jpg);
   }
 }
 
@@ -904,6 +904,7 @@ fieldset {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
 
 .agree-check:has(.visually-hidden:checked) .checkbox-span {
@@ -980,9 +981,27 @@ fieldset {
 
   /* Sec1 */
   .solution-sec {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
     padding-top: 112px;
     padding-bottom: 112px;
   }
+
+  @media (min-resolution: 192dpi) {
+    .solution-sec {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-x2.jpg);
+    }
+  }
+
   .solution {
     max-width: 496px;
     font-size: 56px;
@@ -1033,6 +1052,7 @@ fieldset {
     flex-wrap: wrap;
     align-items: baseline;
     gap: 72px 0;
+    width: 584px;
   }
 
   .footer-div-logo {
@@ -1124,8 +1144,25 @@ fieldset {
 
   /* Sec1 */
   .solution-sec {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .solution-sec {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-x2.jpg);
+    }
   }
 
   .solution {
@@ -1157,6 +1194,7 @@ fieldset {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    text-align: start;
   }
 
   /* Sec3 */
