@@ -1152,6 +1152,8 @@ fieldset {
       url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   @media (min-resolution: 192dpi) {
